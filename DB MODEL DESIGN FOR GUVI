@@ -1,0 +1,132 @@
+The Following are the tables has to be in your database & model design:
+
+
+
+
+users
+
+
+codekata
+
+
+attendance
+
+
+topics
+
+
+tasks
+
+
+company_drives
+
+
+mentors
+
+
+students_activated_courses
+
+
+courses
+
+
+
+
+
+
+
+
+
+The following are the queries need to be executed
+
+
+
+
+
+
+
+1. Create tables for the above list given
+
+Queries:
+1.CREATE DATABASE  students;
+use students;
+CREATE TABLE users(
+student_name varchar(100),
+student_email varchar(40),
+student_birthdate int,
+student_mobile int,
+student_address varchar (120),
+student_birthdate int));
+CREATE TABLE code kata(
+codekata_difficult_topics varchar(100),
+codekata_total_questions int,
+codekata_solved_questions int,
+codekata_not_solved int,
+Codekata_level varchar(20);
+CREATE TABLE attendance(
+attendance_total_days int,
+attendance_present_days int ,
+attendance_not_present_days int,
+attendance_percentage float,
+attendance_filled int);
+CREATE TABLE topics(
+topics_names varchar(20),
+topics_covered int,
+topics_to_be_covered ,
+topic_taking_name varchar(26),
+topics_difficulty_level  varchar(20));
+CREATE TABLE tasks(
+total_no_of_tasks int,
+react_tasks int,
+tasks_pending int,
+tasks_completed int,
+tasks_finished _percentage float);
+CREATE TABLE company_drives(
+total_companies int,
+total_offers int,
+total_drive_days int,
+high_paying_companies int,
+placed _percentage float);
+CREATE TABLE mentors(
+all_mentors int,
+head_mentor_name varchar(40),
+mentor_reviews varchar(200),
+experienced_mentors int,
+fresh_mentors);
+CREATE TABLE students_activated_courses(
+all_activated_courses varchar(65),
+available_free_courses varchar(15),
+total_activated_courses int,
+paid_activated_courses int,
+trending_activated_courses varchar(56));
+CREATE TABLE courses(
+all_courses varchar(100),
+available_free_courses varchar(15),
+total_courses int,
+paid_courses int,
+trending_courses varchar(56));
+-------------------------------------------------------------------------
+
+2.insert at least 5 rows of values in each table
+
+.INSERT INTO users VALUES(“Amarnath”,”amar2017@gmail.com”,15/07/1995,”no:6,raj street ,Tambaram,Chennai-45”);
+INSERT INTO codekata VALUES(“Arrays”,40,25,15,”difficulty”);
+INSERT INTO attendance VALUES(100,89,11,87.65%,90);
+INSERT INTO topics VALUES(“NODEJS”,”REACT,NODEJS,MONGODB”,”DATA STRUCTURES”,”AWS”,”MEDIUM”);
+INSERT INTO  tasks VALUES(30,10,6,39,78.36);
+INSERT INTO company_drives VALUES(250,1120,25,26,100);
+INSERT INTO mentors VALUES(280,”ARUN PRAKASH”,”GOOD”,250,30);
+INSERT INTO students_activated_courses VALUES(“DATA SCIENCE,FULL STACK,CLOUD,AUTOMATION”,”JAVASCRIPT BASICS”,10,2,”MERN STACK”);
+INSERT INTO courses VALUES(“MEAN STACK,,”AWS”,TESTING”,”PYTHON BASICS”,10,2,”FULL STACK”);
+
+
+
+
+
+
+
+
+
+
+
+
